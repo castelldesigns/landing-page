@@ -1,0 +1,164 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom CSS Colors */
+:root {
+    --main-color: #f9faf8;
+    --dark-bg-color: #1f2937;
+    --mid-bg-color: #e5e7eb;
+    --lightblue-color: #3882f6;
+}
+
+/* Section Background Colors */
+.main-header {
+    background-color: var(--dark-bg-color);
+    width: 100%;
+    padding: 10px 0;
+}
+
+#hero {
+    background-color: var(--dark-bg-color);
+}
+
+#quote {
+    background-color: var(--mid-bg-color);
+}
+
+
+
+/* Fonts */
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#hero-subtitle {
+    color: var(--mid-bg-color);
+}
+
+blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--dark-bg-color);
+    font-style: italic;
+}
+
+.quote-cite {
+    display: flex;
+    justify-content: right;
+    font-weight: 900;
+    font-style: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-bg-color);
+    color: white;
+    padding: 20px 0px;
+}
+
+/* Container and Section Layout */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 90px 0;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 400px;
+    align-items: center;
+}
+
+.hero-image {
+    object-fit: cover;
+    max-width: 100%;
+    width: 600px;
+    height: 300px;
+}
+
+#info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+}
+#quote-content {
+    width: 60%;
+}
+
+/* Header */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* Other */
+button {
+    background-color: var(--lightblue-color);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 30px;
+    margin-top: 15px;
+    border: none;
+}
+
+.cta-button {
+    background-color: var(--lightblue-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+button:hover, .cta-button:hover {
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+#cta-section {
+    display: flex;
+    gap: 400px;
+    background-color: var(--lightblue-color);
+    padding: 30px 50px;
+    border-radius: 5px;
+    color: var(--main-color);
+    align-items: center;
+    justify-content: center;
+}
