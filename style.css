@@ -38,6 +38,7 @@ h1 {
     font-size: 48px;
     color: var(--main-color);
     font-weight: 900;
+    line-height: 0.90em;
 }
 
 h2 {
@@ -47,6 +48,7 @@ h2 {
 
 #hero-subtitle {
     color: var(--mid-bg-color);
+    padding-top: 10px;
 }
 
 blockquote {
